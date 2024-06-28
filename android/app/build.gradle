@@ -56,3 +56,9 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    implementation 'com.amazonaws:ivs-broadcast:1.19.1'
+//    implementation group: 'com.amazonaws', name: 'ivs-broadcast', version: '1.19.1'
+//    implementation 'com.amazonaws:aws-android-sdk-ivs:1.11.3' // Add the IVS Broadcast SDK dependency
+}
