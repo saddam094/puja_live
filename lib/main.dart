@@ -1,12 +1,16 @@
+import 'dart:developer';
+
 import 'package:flex_color_scheme/flex_color_scheme.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ivs_broadcaster/ivs_broadcaster.dart';
 import 'package:puja_live/features/dashboard/presentation/view/dashboard_screen.dart';
 
 void main() {
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   runApp(const MyApp());
 }
@@ -88,7 +92,7 @@ class MyApp extends StatelessWidget {
           themeMode: ThemeMode.system,
 
           home: const DashboardScreen(),
-          // home: IVSBroadcaster(),
+          // home: const BroadCastWidget(),
           // home: userIsLoggedIn ?  const DashBoardScreen() :  const SplashScreen(),
           // home:  LoginScreen(),
         );
